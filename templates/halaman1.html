@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BRImo Festival</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+  }
+  </style>
+</head>
+<body>
+  <img src="{{ url_for('static', filename='bri.jpg') }}" onclick="masuk()" style="width: 100%; display: block; cursor: pointer;" alt="Splash Image">
+
+  <script>
+    function masuk() {
+      window.location.href = "/halaman2"; // pastikan route /halaman2 mengarah ke halaman input data
+    }
+  </script>
+</body>
+</html>
